@@ -1,6 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Oskar's Daily Brief · {{DATE}}</title><link rel="stylesheet" href="../style.css"></head><body><main>
-<header><a href="../">Oskar's Daily Brief</a><div class="date">{{DATE_LONG}}</div></header>
-<article>
-<!-- {{CONTENT}}: <h1>headline</h1>, then <h2> per section with <ul><li> bullets -->
-</article><footer><a href="../">← All briefs</a></footer></main></body></html>
+<title>Oskar's Daily Brief · {{DATE}}</title><link rel="stylesheet" href="../style.css?v=2"></head><body><main>
+<header class="topbar"><a class="brand" href="../">Oskar's Daily Brief</a><a href="../">&larr; All briefs</a></header>
+<div class="masthead"><div class="kicker">{{DATE_LONG}}</div><h1>{{HEADLINE}}</h1></div>
+<div class="kicker">Top stories</div>
+<section class="hero">
+<!-- STORY: class one of ai|macro|sea|sci|data --><article class="story {{S1_CLASS}}"><span class="chip">{{S1_LABEL}}</span><h3>{{S1_HEADLINE}}</h3><p>{{S1_WHY}}</p><a href="{{S1_URL}}">{{S1_SOURCE}} &rarr;</a></article>
+<!-- STORY: class one of ai|macro|sea|sci|data --><article class="story {{S2_CLASS}}"><span class="chip">{{S2_LABEL}}</span><h3>{{S2_HEADLINE}}</h3><p>{{S2_WHY}}</p><a href="{{S2_URL}}">{{S2_SOURCE}} &rarr;</a></article>
+<!-- STORY: class one of ai|macro|sea|sci|data --><article class="story {{S3_CLASS}}"><span class="chip">{{S3_LABEL}}</span><h3>{{S3_HEADLINE}}</h3><p>{{S3_WHY}}</p><a href="{{S3_URL}}">{{S3_SOURCE}} &rarr;</a></article>
+<!-- STORY: class one of ai|macro|sea|sci|data --><article class="story {{S4_CLASS}}"><span class="chip">{{S4_LABEL}}</span><h3>{{S4_HEADLINE}}</h3><p>{{S4_WHY}}</p><a href="{{S4_URL}}">{{S4_SOURCE}} &rarr;</a></article>
+</section>
+<section class="area ai"><h2><span class="chip">AI</span>AI build-out &amp; tools</h2><ul>{{AI_ITEMS}}</ul></section>
+<section class="area macro"><h2><span class="chip">Macro</span>Macroeconomics</h2><ul>{{MACRO_ITEMS}}</ul></section>
+<section class="area sea"><h2><span class="chip">Red Sea</span>Red Sea shipping</h2><ul>{{SEA_ITEMS}}</ul></section>
+<section class="area sci"><h2><span class="chip">Science</span>Science &amp; CS</h2><ul>{{SCI_ITEMS}}</ul></section>
+<section class="area data"><h2><span class="chip">Data</span>Data engineering</h2><ul>{{DATA_ITEMS}}</ul></section>
+<section class="area channels extra"><h2><span class="chip">Channels</span>From your channels</h2><ul>{{CHANNEL_ITEMS}}</ul></section>
+<section class="area people extra"><h2><span class="chip">People</span>From the people you follow</h2><ul>{{PEOPLE_ITEMS}}</ul></section>
+<section class="area potentials extra"><h2><span class="chip">New</span>New potentials</h2><ul>{{POTENTIAL_ITEMS}}</ul></section>
+<p class="note">{{NOTES}}</p>
+<footer><a href="../">&larr; All briefs</a></footer></main></body></html>
