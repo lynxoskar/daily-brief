@@ -9,3 +9,7 @@ Static site (GitHub Pages, main branch root). No build step.
 5. In `index.html`, add a card right under `<!-- ARCHIVE: newest first -->`:
    `<a class="bcard" href="briefs/YYYY-MM-DD.html"><div class="d">DATE_LONG</div><div class="h">HEADLINE</div></a>`
 6. No em-dashes. Commit and push to `main`.
+
+## Sources
+Core X follows added 2026-10-12 (verified active): @KentonVarda (Kenton Varda, Cloudflare Workers), @rough__sea (Ryan Dahl, Deno/Cloudflare), @ceo_clickhouse (Aaron Katz, ClickHouse CEO), @fabknowledge (Doug O'Laughlin, semis), @simonw (Simon Willison, AI/data tooling), @mustafasuleyman (Mustafa Suleyman, Microsoft AI).
+Plus all handles listed in the routine prompt.
